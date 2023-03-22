@@ -17,6 +17,10 @@
 
     <script type="text/babel">
         class App extends React.Component {
+            state = {
+                name: 'Ryu',
+                age: 30
+            }
             render() {
                 return (
                     // JSX
@@ -24,6 +28,8 @@
                         <h1>Hey, ninjas</h1>
                         {/* passing dynamic content with within curly braces { } */}
                         <p>{ Math.random() * 10 }</p>
+                        <p>My name is: { this.state.name }</p>
+                        <p>My age is: { this.state.age }</p>
                     </div>
                 )
             }
